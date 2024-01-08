@@ -177,7 +177,7 @@ function drawFaces(canvas, data, fps, shapes, recommendation) {
   if (!ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   // draw title
-  ctx.font = 'small-caps 20px "Segoe UI"';
+  ctx.font = ' 20px "Segoe UI"';
   ctx.fillStyle = 'white';
   ctx.fillText(`FPS: ${fps}`, 10, 25);
   for (const person of data) {
