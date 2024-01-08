@@ -193,20 +193,22 @@ function drawFaces(canvas, data, fps, shapes, recommendation) {
     // draw text labels
     const expression = Object.entries(person.expressions).sort((a, b) => b[1] - a[1]);
     ctx.fillStyle = 'black';
-    ctx.fillText(`gender: ${Math.round(100 * person.genderProbability)}% ${person.gender}`, person.detection.box.x, person.detection.box.y - 95);
-    ctx.fillText(`expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, person.detection.box.x, person.detection.box.y - 77);
-    ctx.fillText(`age: ${Math.round(person.age)} years`, person.detection.box.x, person.detection.box.y - 59);
-    ctx.fillText(`roll:${person.angle.roll}° pitch:${person.angle.pitch}° yaw:${person.angle.yaw}°`, person.detection.box.x, person.detection.box.y - 41);
-    ctx.fillText(`Face Shape: ${shapes}`, person.detection.box.x, person.detection.box.y - 23)
-    ctx.fillText(`Recommended frames: ${recommendation}`, person.detection.box.x, person.detection.box.y - 5)
+    ctx.fillText(`gender: ${Math.round(100 * person.genderProbability)}% ${person.gender}`, person.detection.box.x, person.detection.box.y - 113);
+    ctx.fillText(`expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, person.detection.box.x, person.detection.box.y - 95);
+    ctx.fillText(`age: ${Math.round(person.age)} years`, person.detection.box.x, person.detection.box.y - 77);
+    ctx.fillText(`roll:${person.angle.roll}° pitch:${person.angle.pitch}° yaw:${person.angle.yaw}°`, person.detection.box.x, person.detection.box.y - 59);
+    ctx.fillText(`Face Shape: ${shapes}`, person.detection.box.x, person.detection.box.y - 41)
+    ctx.fillText(`Recommended frames: `, person.detection.box.x, person.detection.box.y - 23)
+    ctx.fillText(`${recommendation}`, person.detection.box.x, person.detection.box.y - 5)
     
     ctx.fillStyle = 'lightblue';
-    ctx.fillText(`gender: ${Math.round(100 * person.genderProbability)}% ${person.gender}`, person.detection.box.x, person.detection.box.y - 96);
-    ctx.fillText(`expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, person.detection.box.x, person.detection.box.y - 78);
-    ctx.fillText(`age: ${Math.round(person.age)} years`, person.detection.box.x, person.detection.box.y - 60);
-    ctx.fillText(`roll: ${person.angle.roll}° pitch:${person.angle.pitch}° yaw:${person.angle.yaw}°`, person.detection.box.x, person.detection.box.y - 42);
-    ctx.fillText(`Face Shape: ${shapes}`, person.detection.box.x, person.detection.box.y - 24)
-    ctx.fillText(`Recommended frames: ${recommendation}`, person.detection.box.x, person.detection.box.y - 6)
+    ctx.fillText(`gender: ${Math.round(100 * person.genderProbability)}% ${person.gender}`, person.detection.box.x, person.detection.box.y - 114);
+    ctx.fillText(`expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, person.detection.box.x, person.detection.box.y - 96);
+    ctx.fillText(`age: ${Math.round(person.age)} years`, person.detection.box.x, person.detection.box.y - 78);
+    ctx.fillText(`roll: ${person.angle.roll}° pitch:${person.angle.pitch}° yaw:${person.angle.yaw}°`, person.detection.box.x, person.detection.box.y - 60);
+    ctx.fillText(`Face Shape: ${shapes}`, person.detection.box.x, person.detection.box.y - 42)
+    ctx.fillText(`Recommended frames: `, person.detection.box.x, person.detection.box.y - 24)
+    ctx.fillText(`${recommendation}`, person.detection.box.x, person.detection.box.y - 6)
 
     // draw face points for each face
     ctx.globalAlpha = 0.8;
