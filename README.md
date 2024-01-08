@@ -11,7 +11,7 @@
 
 <br>
 
-**Live Demo**: <https://yawhou.github.io/face-api-test-deploy/>
+**Live Demo**: <[https://yawhou.github.io/face-api-test-deploy/](https://github.com/Yawhou/face-api-test-deploy/blob/main/demo/webcam.html)>
 
 <br>
 
