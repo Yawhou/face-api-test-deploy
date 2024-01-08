@@ -196,7 +196,7 @@ function drawFaces(canvas, data, fps, shapes, recommendation) {
     ctx.fillText(`Gender: ${Math.round(100 * person.genderProbability)}% ${person.gender}`, person.detection.box.x, person.detection.box.y - 113);
     ctx.fillText(`Expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, person.detection.box.x, person.detection.box.y - 95);
     ctx.fillText(`Age: ${Math.round(person.age)} years`, person.detection.box.x, person.detection.box.y - 77);
-    ctx.fillText(`Roll:${person.angle.roll}° Pitch:${person.angle.pitch}° Yaw:${person.angle.yaw}°`, person.detection.box.x, person.detection.box.y - 59);
+    ctx.fillText(`Roll: ${person.angle.roll}° Pitch:${person.angle.pitch}° Yaw:${person.angle.yaw}°`, person.detection.box.x, person.detection.box.y - 59);
     ctx.fillText(`Face Shape: ${shapes}`, person.detection.box.x, person.detection.box.y - 41)
     ctx.fillText(`Recommended Frames: `, person.detection.box.x, person.detection.box.y - 23)
     ctx.fillText(`${recommendation}`, person.detection.box.x, person.detection.box.y - 5)
