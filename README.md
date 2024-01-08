@@ -11,7 +11,7 @@
 
 <br>
 
-**Live Demo**: <https://vladmandic.github.io/face-api/demo/webcam.html>
+**Live Demo**: <https://yawhou.github.io/face-api-test-deploy/>
 
 <br>
 
