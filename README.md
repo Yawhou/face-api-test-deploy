@@ -6,7 +6,7 @@
 
 <br>
 
-**Live Demo**: <https://yawhou.github.io/face-api-test-deploy/demo/webcam.html>
+**Live Demo**: <https://yawhou.github.io/face-shape-analysis/demo/webcam.html>
 
 <br>
 
